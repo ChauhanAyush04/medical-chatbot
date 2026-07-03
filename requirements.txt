@@ -1,0 +1,20 @@
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.3
+pydantic-settings==2.2.1
+
+# Database
+sqlalchemy==2.0.23
+
+# LLM & Embeddings (Simplified - NO langchain conflicts)
+langchain==0.1.0
+langchain-community==0.0.20
+langchain-core==0.1.22
+langchain-groq==0.1.0
+langchain-huggingface==0.0.3
+faiss-cpu==1.7.4
+sentence-transformers>=2.6.0
+
+# Utilities
+python-dotenv==1.0.0
