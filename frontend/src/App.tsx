@@ -2,7 +2,7 @@ import { Navbar } from '@/components/Navbar';
 import { ChatHistory } from '@/components/ChatHistory';
 import { ChatBox } from '@/components/ChatBox';
 import { useChat } from '@/hooks/useChat';
-import './App.css';
+import './app.css';
 
 function App() {
   const { sessions, currentSession, loading, error, createNewSession, setCurrentSession, sendMessage, deleteSession } = useChat();
