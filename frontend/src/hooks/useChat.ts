@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import { apiClient } from '@/services/api';
-import { ChatSession, ChatMessage, MedicalSearchResponse } from '@/types';
+import { ChatSession, ChatMessage } from '@/types';
 
 export const useChat = () => {
   const [sessions, setSessions] = useState<ChatSession[]>([]);
@@ -39,10 +39,11 @@ export const useChat = () => {
       return session;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to create session');
+      return null;
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [loadSessions]);
 
   const sendMessage = useCallback(
     async (query: string) => {

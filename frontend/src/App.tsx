@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navbar } from '@/components/Navbar';
 import { ChatHistory } from '@/components/ChatHistory';
 import { ChatBox } from '@/components/ChatBox';
