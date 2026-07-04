@@ -45,9 +45,6 @@ myenv/
 *.sqlite
 *.sqlite3
 
-# Vector Store (FAISS - don't commit the index)
-vectorstores/
-db_faiss/
 
 # Logs
 *.log
